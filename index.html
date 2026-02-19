@@ -6,8 +6,7 @@
   <title>Salman Khan — Data Science Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <link rel="stylesheet" href="styles.css?v=1.1" /> </head>
 <body>
 
   <header class="site-header">
@@ -55,7 +54,7 @@
             <h3>SpamGuard AI</h3>
             <p class="muted">TensorFlow • Hugging Face</p>
             <p>Real-time spam detection system optimized for fast inference.</p>
-            <a href="https://huggingface.co/spaces/KhanzadaSalman/SpamGuard-AI" target="_blank" class="btn small">View Live</a>
+            <a href="https://huggingface.co/spaces/KhanzadaSalman/SpamGuard-AI" target="_blank" class="btn small">View Live App</a>
           </div>
         </article>
 
@@ -65,25 +64,9 @@
             <h3>Spam Detective</h3>
             <p class="muted">FastAPI • Render</p>
             <p>Full-stack email classification service deployed on Render.</p>
-            <a href="https://spam-email-detector-2-ygsp.onrender.com/" target="_blank" class="btn small">View Live</a>
+            <a href="https://spam-email-detector-2-ygsp.onrender.com/" target="_blank" class="btn small">View Live App</a>
           </div>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="certs" class="section light">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <div class="grid certs-grid">
-        <a class="cert premium" href="certs/cert1.pdf" target="_blank"><img src="certs/cert1.jpg"><div>AI & ML Intern — DevelopersHub</div></a>
-        <a class="cert" href="certs/cert2.pdf" target="_blank"><img src="certs/cert2.jpg"><div>Python for Data Analysis</div></a>
-        <a class="cert" href="certs/cert3.pdf" target="_blank"><img src="certs/cert3.jpg"><div>Data Analytics with Excel</div></a>
-        <a class="cert" href="certs/cert4.pdf" target="_blank"><img src="certs/cert4.jpg"><div>ChatGPT for Excel</div></a>
-        <a class="cert" href="certs/cert5.pdf" target="_blank"><img src="certs/cert5.jpg"><div>Basics of Python</div></a>
-        <a class="cert" href="certs/cert6.pdf" target="_blank"><img src="certs/cert6.jpg"><div>Data Analytics Foundations</div></a>
-        <a class="cert" href="certs/cert7.pdf" target="_blank"><img src="certs/cert7.jpg"><div>British Airways Internship</div></a>
-        <a class="cert" href="certs/cert8.pdf" target="_blank"><img src="certs/cert8.jpg"><div>SQL & Python Analytics</div></a>
       </div>
     </div>
   </section>
@@ -92,10 +75,14 @@
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
       <div class="contact-wrapper">
-        <div class="contact-item"><strong>Email:</strong> <a href="mailto:salmanrahim520@gmail.com">salmanrahim520@gmail.com</a></div>
-        <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/salman-khan5" target="_blank">in/salman-khan5</a></div>
-        <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/KhanzadaSalman" target="_blank">KhanzadaSalman</a></div>
-        <div class="contact-item"><strong>Phone:</strong> +92 311 9365608</div>
+        <div class="contact-card">
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:salmanrahim520@gmail.com">salmanrahim520@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/salman-khan5" target="_blank">in/salman-khan5</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/KhanzadaSalman" target="_blank">KhanzadaSalman</a></p>
+            <p><strong>Phone:</strong> +92 311 9365608</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -105,7 +92,6 @@
   </footer>
 
   <script>
-    // Typing Effect
     const textArray = ["Data Science Researcher", "NLP Specialist", "AI Engineer"];
     let i = 0, j = 0, currentText = "", isDeleting = false;
     function type() {
@@ -118,7 +104,6 @@
     }
     document.addEventListener("DOMContentLoaded", type);
 
-    // FIXING THE MOBILE MENU (☰)
     const toggle = document.getElementById("nav-toggle");
     const nav = document.getElementById("nav");
     toggle.addEventListener("click", () => {
