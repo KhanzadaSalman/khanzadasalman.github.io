@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salman Khan — Data Science Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav-container">
-      <a href="#" class="brand">Salman Khan</a>
+      <a href="#" class="brand">Salman <span class="accent-text">Khan</span></a>
       <nav class="nav-links" id="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#certs">Certifications</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <a class="btn" href="resume.pdf" target="_blank">View Resume</a>
+        <a class="btn nav-btn" href="resume.pdf" target="_blank">Resume PDF</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <button class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </header>
 
@@ -34,7 +37,6 @@
         <p>Data Science Master’s graduate specializing in NLP and Deep Learning. Focused on bridging academic research with practical AI applications through interactive project deployments.</p>
         <div class="cta-buttons">
           <a href="#projects" class="btn primary">View My Work</a>
-          <a href="resume.pdf" class="btn outline" target="_blank">Resume PDF</a>
         </div>
       </div>
       <div class="hero-img">
@@ -47,47 +49,24 @@
     <div class="container">
       <h2 class="section-title">Live AI Deployments</h2>
       <div class="grid cards">
-        
         <article class="card live-card">
-          <div class="main-project-img">
-            <img src="assets/spamguard-result.jpg" alt="SpamGuard AI">
-          </div>
+          <div class="main-project-img"><img src="assets/spamguard-result.jpg" alt="SpamGuard AI"></div>
           <div class="card-content">
             <h3>SpamGuard AI</h3>
-            <p class="muted">TensorFlow • Hugging Face • Live</p>
-            <p>A deep learning system for real-time spam detection. Optimized for fast inference.</p>
-            <div class="card-actions">
-              <a href="https://huggingface.co/spaces/KhanzadaSalman/SpamGuard-AI" target="_blank" class="btn">View Live</a>
-            </div>
+            <p class="muted">TensorFlow • Hugging Face</p>
+            <p>Real-time spam detection system optimized for fast inference.</p>
+            <a href="https://huggingface.co/spaces/KhanzadaSalman/SpamGuard-AI" target="_blank" class="btn small">View Live</a>
           </div>
         </article>
 
         <article class="card live-card">
-          <div class="main-project-img">
-            <img src="assets/detective-result.png" alt="Spam Detective">
-          </div>
+          <div class="main-project-img"><img src="assets/detective-result.png" alt="Spam Detective"></div>
           <div class="card-content">
             <h3>Spam Detective</h3>
-            <p class="muted">FastAPI • Render • Full-Stack</p>
-            <p>End-to-end email classification service demonstrating robust API deployment on Render.</p>
-            <div class="card-actions">
-              <a href="https://spam-email-detector-2-ygsp.onrender.com/" target="_blank" class="btn">View Live</a>
-            </div>
+            <p class="muted">FastAPI • Render</p>
+            <p>Full-stack email classification service deployed on Render.</p>
+            <a href="https://spam-email-detector-2-ygsp.onrender.com/" target="_blank" class="btn small">View Live</a>
           </div>
-        </article>
-      </div>
-
-      <h2 style="margin-top: 50px;">Core Research</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Roman Urdu Hate Speech Detection</h3>
-          <p class="muted">Deep Learning • DSCNN • NLP</p>
-          <p>Integrated XLM-R and ELMo embeddings to achieve superior predictive performance on low-resource text.</p>
-        </article>
-        <article class="card">
-          <h3>Lung Cancer Prediction</h3>
-          <p class="muted">Random Forest • Python</p>
-          <p>Built a diagnostic tool for early-stage cancer risk identification using patient medical history.</p>
         </article>
       </div>
     </div>
@@ -95,12 +74,9 @@
 
   <section id="certs" class="section light">
     <div class="container">
-      <h2>Certifications</h2>
+      <h2 class="section-title">Certifications</h2>
       <div class="grid certs-grid">
-        <a class="cert premium" href="certs/cert1.pdf" target="_blank">
-          <img src="certs/cert1.jpg" alt="Internship">
-          <div>AI & ML Intern — DevelopersHub</div>
-        </a>
+        <a class="cert premium" href="certs/cert1.pdf" target="_blank"><img src="certs/cert1.jpg"><div>AI & ML Intern — DevelopersHub</div></a>
         <a class="cert" href="certs/cert2.pdf" target="_blank"><img src="certs/cert2.jpg"><div>Python for Data Analysis</div></a>
         <a class="cert" href="certs/cert3.pdf" target="_blank"><img src="certs/cert3.jpg"><div>Data Analytics with Excel</div></a>
         <a class="cert" href="certs/cert4.pdf" target="_blank"><img src="certs/cert4.jpg"><div>ChatGPT for Excel</div></a>
@@ -112,27 +88,43 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <section id="contact" class="section dark">
     <div class="container">
-      <p>© 2026 Salman Khan</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-wrapper">
+        <div class="contact-item"><strong>Email:</strong> <a href="mailto:salmanrahim520@gmail.com">salmanrahim520@gmail.com</a></div>
+        <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/salman-khan5" target="_blank">in/salman-khan5</a></div>
+        <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/KhanzadaSalman" target="_blank">KhanzadaSalman</a></div>
+        <div class="contact-item"><strong>Phone:</strong> +92 311 9365608</div>
+      </div>
     </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Salman Khan | Built with Passion</p>
   </footer>
 
   <script>
-    const textArray = ["Data Science Researcher", "NLP Enthusiast", "AI Innovator"];
+    // Typing Effect
+    const textArray = ["Data Science Researcher", "NLP Specialist", "AI Engineer"];
     let i = 0, j = 0, currentText = "", isDeleting = false;
     function type() {
       const typingElement = document.querySelector(".typing");
       currentText = textArray[i];
       typingElement.textContent = isDeleting ? currentText.substring(0, j--) : currentText.substring(0, j++);
-      if (!isDeleting && j === currentText.length + 1) { isDeleting = true; setTimeout(type, 1200); }
-      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % textArray.length; setTimeout(type, 300); }
-      else { setTimeout(type, isDeleting ? 60 : 100); }
+      if (!isDeleting && j === currentText.length + 1) { isDeleting = true; setTimeout(type, 1500); }
+      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % textArray.length; setTimeout(type, 500); }
+      else { setTimeout(type, isDeleting ? 50 : 100); }
     }
     document.addEventListener("DOMContentLoaded", type);
+
+    // FIXING THE MOBILE MENU (☰)
     const toggle = document.getElementById("nav-toggle");
     const nav = document.getElementById("nav");
-    if(toggle) toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+      toggle.classList.toggle("active");
+    });
   </script>
 </body>
 </html>
