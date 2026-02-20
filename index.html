@@ -151,11 +151,35 @@
     <p>© 2026 Salman Khan | Built for Performance</p>
   </footer>
 
+  <div id="chat-widget" style="display: none; position: fixed; bottom: 90px; right: 20px; width: 400px; height: 500px; z-index: 1000; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid #0ea5a3; background: white;">
+    <div style="background: #0ea5a3; color: white; padding: 10px; font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
+      <span>Salman AI Assistant</span>
+      <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;">×</button>
+    </div>
+    <iframe
+      src="https://khanzadasalman-salman-ai-assistant.hf.space/?embed=true"
+      frameborder="0"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+
+  <button onclick="toggleChat()" id="chat-button" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: #0ea5a3; color: white; border: none; cursor: pointer; font-size: 24px; z-index: 1001; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
+    💬
+  </button>
   <script>
+    /* Chat Widget Toggle Function */
+    function toggleChat() {
+      const chatWidget = document.getElementById('chat-widget');
+      chatWidget.style.display = chatWidget.style.display === 'none' ? 'block' : 'none';
+    }
+
+    /* Existing Portfolio Scripts */
     const textArray = ["Data Science Researcher", "NLP Specialist", "AI Engineer"];
     let i=0, j=0, isDeleting=false;
     function type() {
       const el = document.querySelector(".typing");
+      if(!el) return;
       let current = textArray[i];
       el.textContent = isDeleting ? current.substring(0, j--) : current.substring(0, j++);
       if(!isDeleting && j === current.length + 1) { isDeleting = true; setTimeout(type, 2000); }
