@@ -43,9 +43,9 @@
           <a href="#contact" class="btn outline">Get in Touch</a>
         </div>
       </div>
-      <div class="hero-img-container">
+      <div class="hero-img-container" style="flex: 1; display: flex; justify-content: center; align-items: center;">
         <div class="img-glow"></div>
-        <img src="assets/profile.jpg" alt="Salman Khan" class="profile-pic">
+        <img src="assets/profile.jpg" alt="Salman Khan" class="profile-pic" style="max-height: 420px; width: auto; border-radius: 20px; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
       </div>
     </div>
   </section>
@@ -174,19 +174,21 @@
     <p>© 2026 Salman Khan | Built for Performance</p>
   </footer>
 
-<div id="chat-widget" style="display: none; position: fixed; bottom: 90px; right: 20px; width: 350px; height: 450px; z-index: 1000; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid #0ea5a3; background: white;">
-    <div style="background: #0ea5a3; color: white; padding: 10px; font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
-      <span>Salman AI Assistant</span>
+<div id="chat-widget" style="display: none; position: fixed; bottom: 85px; right: 20px; width: 320px; height: 400px; z-index: 1000; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.2); border: 1.5px solid #0ea5a3; background: white;">
+    <div style="background: #0ea5a3; color: white; padding: 10px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; height: 45px;">
+      <span style="font-size: 0.9rem;">Salman AI Assistant</span>
       <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;">×</button>
     </div>
-    <iframe
-      src="https://KhanzadaSalman-salman-ai-assistan.hf.space/?embed=true"
-      frameborder="0"
-      width="100%"
-      height="100%"
-      style="background: white; padding-bottom: 20px;"
-    ></iframe>
-  </div>
+    <div style="width: 100%; height: calc(100% - 45px); overflow: hidden;">
+      <iframe
+        src="https://KhanzadaSalman-salman-ai-assistan.hf.space/?embed=true"
+        frameborder="0"
+        width="100%"
+        height="115%" 
+        style="background: white; margin-top: -35px;" 
+      ></iframe>
+    </div>
+</div>
 
   <button onclick="toggleChat()" id="chat-button" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: #0ea5a3; color: white; border: none; cursor: pointer; font-size: 24px; z-index: 1001; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
     💬
