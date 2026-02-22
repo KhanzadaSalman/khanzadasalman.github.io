@@ -133,6 +133,25 @@
     </div>
   </section>
 
+  <section id="education" class="section" style="background: #0a0f1a; padding: 60px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Academic Journey</span>
+        <h2>Education</h2>
+      </div>
+      <div style="color: #94a3b8; line-height: 1.8;">
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: #ffffff;">Master of Science in Data Science</h4>
+          <p>CGPA: 3.5 / 4.0 | Focus: NLP & Machine Learning</p>
+        </div>
+        <div>
+          <h4 style="color: #ffffff;">Bachelor of Science in Mathematics</h4>
+          <p>Foundation for complex algorithmic development and statistical modeling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="section contact-section">
     <div class="container">
       <div class="contact-glass">
@@ -157,7 +176,7 @@
       <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;">×</button>
     </div>
     <iframe
-      src="https://khanzadasalman-salman-ai-assistant.hf.space/?embed=true"
+      src="https://KhanzadaSalman-salman-ai-assistant.hf.space/?embed=true"
       frameborder="0"
       width="100%"
       height="100%"
@@ -168,14 +187,13 @@
   <button onclick="toggleChat()" id="chat-button" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: #0ea5a3; color: white; border: none; cursor: pointer; font-size: 24px; z-index: 1001; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
     💬
   </button>
+
   <script>
-    /* Chat Widget Toggle Function */
     function toggleChat() {
       const chatWidget = document.getElementById('chat-widget');
       chatWidget.style.display = chatWidget.style.display === 'none' ? 'block' : 'none';
     }
 
-    /* Existing Portfolio Scripts */
     const textArray = ["Data Science Researcher", "NLP Specialist", "AI Engineer"];
     let i=0, j=0, isDeleting=false;
     function type() {
